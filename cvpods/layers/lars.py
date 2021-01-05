@@ -5,12 +5,9 @@ from torch.optim.optimizer import Optimizer
 
 from cvpods._C import compute_adaptive_lr
 
-from cvpods.solver.registry import OPTIMIZERS
-
 __all__ = ['LARS']
 
 
-@OPTIMIZERS.register()
 class LARS(Optimizer):
     """Implements 'LARS (Layer-wise Adaptive Rate Scaling)'__ as Optimizer a
     :class:`~torch.optim.Optimizer` wrapper.

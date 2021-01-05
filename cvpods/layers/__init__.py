@@ -1,5 +1,4 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
-from .batch_norm import FrozenBatchNorm2d, NaiveSyncBatchNorm, get_activation, get_norm
 from .deform_conv import DeformConv, ModulatedDeformConv
 from .deform_conv_with_off import DeformConvWithOff, ModulatedDeformConvWithOff
 from .mask_ops import paste_masks_in_image
